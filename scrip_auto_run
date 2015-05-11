@@ -1,0 +1,11 @@
+#!/bin/bash
+# Script to start our application
+echo "Doing autorun script..."
+#sudo /home/pi/projects/my_project.a &
+sudo echo 2 > /sys/class/gpio/export
+sudo echo 3 > /sys/class/gpio/export
+sudo echo 4 > /sys/class/gpio/export
+sudo echo out > /sys/class/gpio/gpio2/direction
+sudo echo out > /sys/class/gpio/gpio3/direction
+sudo echo out > /sys/class/gpio/gpio4/direction
+
